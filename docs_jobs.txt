@@ -1,0 +1,109 @@
+JOBS
+
+	Cargo 
+	Empresa
+	Salario
+	Home Office
+
+Create
+Read
+Update
+Delete
+
+POST
+/api/v1/jobs
+Request Body
+{
+	cargo: "",
+	empresa: "",
+	salario: "",
+	isHomeOffice: ""
+}
+
+Response Body
+201
+{
+	id: "",
+	cargo: "",
+	empresa: "",
+	salario: "",
+	isHomeOffice: ""
+}
+400
+{
+	error:	"Não foi possível criar vaga"
+}
+
+GET
+/api/v1/jobs/
+Response Body
+200
+{
+	{
+		id: "",
+		cargo: "",
+		empresa: "",
+		salario: "",
+		isHomeOffice: ""
+	},
+	{
+		id: "",
+		cargo: "",
+		empresa: "",
+		salario: "",
+		isHomeOffice: ""
+	}
+}
+404
+{
+	error: "Não foi possível encontrar as vagas"
+}
+
+GET
+/api/v1/jobs/{id}
+Path Variable ID
+
+Response Body
+200
+{
+	id: "",
+	cargo: "",
+	empresa: "",
+	salario: "",
+	isHomeOffice: ""
+}
+404
+{
+	error: "Não foi possível encontrar a vaga"
+}
+
+PUT
+/api/v1/jobs/{id}
+Request Body
+{
+	cargo: "",
+	empresa: "",
+	salario: "",
+	isHomeOffice: ""
+}
+
+Response Body 
+200
+{
+	id: "",
+	cargo: "",
+	empresa: "",
+	salario: "",
+	isHomeOffice: ""
+}
+
+404
+{
+	error: "Não foi possível encontrar a vaga"
+}
+
+DELETE
+/api/v1/jobs/{id}
+PathVariable ID
+
+Response status 200
